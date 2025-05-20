@@ -292,9 +292,9 @@ Optional arguments:
 - `--attn_size`: Attention dimension (default: 64)
 - `--num_layers`: Number of RNN layers (default: 2)
 - `--cell_type`: RNN cell type (LSTM, GRU, RNN) (default: LSTM)
-- `--dropout`: Dropout rate (default: 0.3)
-- `--batch_size`: Batch size (default: 32)
-- `--lr`: Learning rate (default: 0.001)
+- `--dropout`: Dropout rate (default: 0.2)
+- `--batch_size`: Batch size (default: 64)
+- `--lr`: Learning rate (default: 0.0013206)
 
 ### Hyperparameter Optimization
 
@@ -313,7 +313,7 @@ python evaluate.py --model_path best_model.pth --data_path /path/to/test_data
 
 The model includes functionality to visualize attention weights, showing how the decoder attends to different parts of the input sequence at each decoding step:
 
-![Attention Heatmap](allHeatMaps.png)
+![Attention Heatmap](https://github.com/Kahkashan2708/Deep_Learning-Assignment-3/blob/main/Heatmaps/all_HeatMaps.png?raw=true)
 
 The attention heatmaps demonstrate how the model focuses on specific input characters when generating each output character, providing insights into the transliteration process.
 
