@@ -121,13 +121,6 @@ sweep_id = wandb.sweep(sweep_config, project="dakshina-transliteration")
 wandb.agent(sweep_id, function=main, count=20)
 ```
 
-## Results Visualization
-
-The attention model generates visualizations of attention weights, showing which input characters the model focuses on when generating each output character:
-
-![Attention Visualization](Attention/allHeatMaps.png)
-
-## Detailed Documentation
 # 1. Vanilla Seq2seq:
 
 ## Setup
